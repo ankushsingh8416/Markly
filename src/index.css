@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SUSE", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Define the custom font */
+@font-face {
+  font-family: "tarjan";
+  src: url("/src/assets/font/TrajanPro-Bold.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "avenir";
+  src: url("/src/assets/font/AvenirLTStd-Black.otf") format("woff2");
+}
+@font-face {
+  font-family: "blkchry";
+  src: url("/src/assets/font/BLKCHCRY.TTF") format("woff2");
+}
+
+.blkchry {
+  font-family: "blkchry";
+}
+.tarjan {
+  font-family: "tarjan";
+}
+.content {
+  backdrop-filter: blur(2px);
+}
+.box {
+  width: 90% !important;
+  max-width: 400px; /* Limit the width */
+  border: 2px solid #000;
+  height: 470px;
+  margin: auto !important;
+}
+.arrow {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: -100px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  border-radius: 4px;
+}
+.arrow:hover {
+  background: #000;
+  color: #fff;
+}
+.slick-prev-custom,
+.slick-next-custom {
+  background-color: #000;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.slick-next-custom:hover,
+.slick-prev-custom:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.slick-prev-custom {
+  margin-right: 0.5rem;
+}
+
+.slick-next-custom {
+  margin-left: 0.5rem;
+}
+.product {
+  overflow: hidden;
+  cursor: pointer;
+}
+.product:hover img {
+  transform: scale(1.1);
+  transition: all 300ms ease-in;
+}
+.blur-ef {
+  backdrop-filter: blur(2px);
+}
+.back {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media (max-width: 500px) {
+  .arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -60px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    border-radius: 4px;
+  }
+  .box {
+    width: 97% !important;
+    max-width: 400px; /* Limit the width */
+    border: 2px solid #000;
+    height: 470px;
+    margin: auto !important;
+  }
+}
+/* Shimmer effect styling */
+.shimmer-container {
+  background: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.shimmer-box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* Create a smooth moving shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Add some gap between shimmer items */
+.mx-auto {
+  gap: 20px;
+}
+
+/* Optionally adjust the height or width of shimmer elements */
+.shimmer-box {
+  height: 400px;
+  border-radius: 12px;
+}
+.shimmer-effect {
+  background: linear-gradient(
+    to right, 
+    #e0e0e0 0%, 
+    #f5f5f5 50%, 
+    #e0e0e0 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 1s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+

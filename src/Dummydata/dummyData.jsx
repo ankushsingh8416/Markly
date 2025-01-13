@@ -1,0 +1,66 @@
+export const data = [
+  {
+    img: "https://img.freepik.com/free-photo/cream-kitted-bag-still-life_23-2150709547.jpg",
+    alt: "Cream Knitted Bag",
+    head: "Cream Knitted Bag",
+    desc: "Discover the elegance of our cream knitted bag, perfect for any occasion with its chic, handcrafted design.",
+    price: 47199,  // Changed to number
+    color: "Cream", // Added color property
+  },
+  {
+    img: "https://img.freepik.com/free-photo/violet-knitted-bag-still-life_23-2150709499.jpg",
+    alt: "Violet Knitted Bag",
+    head: "Violet Knitted Bag",
+    desc: "Add a pop of color to your wardrobe with this stunning violet knitted bag, ideal for both casual and formal looks.",
+    price: 17199,
+    color: "Violet",
+  },
+  {
+    img: "https://img.freepik.com/free-photo/red-knitted-bag-still-life_23-2150709555.jpg",
+    alt: "Red Knitted Bag",
+    head: "Red Knitted Bag",
+    desc: "Bold and vibrant, this red knitted bag makes a fashion statement, offering a perfect blend of style and utility.",
+    price: 47000,
+    color: "Red",
+  },
+  {
+    img: "https://img.freepik.com/free-photo/colorful-knitted-bag-still-life_23-2150709497.jpg",
+    alt: "Colorful Knitted Bag",
+    head: "Colorful Knitted Bag",
+    desc: "Express your creativity with this colorful knitted bag, crafted for those who love to stand out.",
+    price: 40599,
+    color: "Multi-color",
+  },
+  {
+    img: "https://img.freepik.com/premium-photo/ultimate-collection-designer-ladies-bags_1263741-11743.jpg",
+    alt: "Designer Ladies Bag",
+    head: "Designer Ladies Bag",
+    desc: "Elevate your outfit with our designer ladies bag, featuring luxurious detailing and superior craftsmanship.",
+    price: 35199,
+    color: "Beige",
+  },
+  {
+    img: "https://img.freepik.com/premium-photo/ladies-hand-bag_862462-4069.jpg",
+    alt: "Classic Handbag",
+    head: "Classic Handbag",
+    desc: "A timeless classic, this handbag combines elegance and practicality for the modern woman.",
+    price: 30000,
+    color: "Brown",
+  },
+  {
+    img: "https://img.freepik.com/premium-photo/red-white-bag-with-red-strap_1191871-76131.jpg",
+    alt: "Red & White Bag",
+    head: "Red & White Bag",
+    desc: "Make a bold impression with our red and white bag, crafted with attention to every detail.",
+    price: 10000,
+    color: "Red & White",
+  },
+  {
+    img: "https://img.freepik.com/free-photo/close-up-kitted-bag-still-life_23-2150709537.jpg",
+    alt: "Minimalist Knitted Bag",
+    head: "Minimalist Knitted Bag",
+    desc: "This minimalist knitted bag is perfect for those who value simplicity with a touch of elegance.",
+    price: 29999,
+    color: "Grey",
+  },
+];
